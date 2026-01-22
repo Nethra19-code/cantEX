@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>canteX | Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="order">
+
+<h2>🧾 Place Order</h2>
+
+<div class="menu-grid">
+  <div class="menu-item">
+    <p><b>Veg Fried Rice</b></p>
+    <p>₹80</p>
+    <button onclick="addToCart('Veg Fried Rice',80)">Add</button>
+  </div>
+
+  <div class="menu-item">
+    <p><b>Masala Dosa</b></p>
+    <p>₹60</p>
+    <button onclick="addToCart('Masala Dosa',60)">Add</button>
+  </div>
+
+  <div class="menu-item">
+    <p><b>Idli Sambar</b></p>
+    <p>₹40</p>
+    <button onclick="addToCart('Idli Sambar',40)">Add</button>
+  </div>
+
+  <div class="menu-item">
+    <p><b>Tea</b></p>
+    <p>₹15</p>
+    <button onclick="addToCart('Tea',15)">Add</button>
+  </div>
+
+  <div class="menu-item">
+    <p><b>Coffee</b></p>
+    <p>₹20</p>
+    <button onclick="addToCart('Coffee',20)">Add</button>
+  </div>
+</div>
+
+<h3>🛒 Cart</h3>
+<div class="card">
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Item</th><th>Qty</th><th>Amount</th><th></th>
+    </tr>
+  </thead>
+  <tbody id="cartItems">
+    <tr><td colspan="4">No items</td></tr>
+  </tbody>
+</table>
+
+<h3>Total: ₹<span id="totalAmount">0</span></h3>
+</div>
+
+<div class="card">
+  <input id="studentName" placeholder="Student Name">
+  <input type="time" id="pickupTime">
+
+  <select id="paymentMethod">
+    <option value="">Payment</option>
+    <option>Online (Mock)</option>
+    <option>Cash on Delivery</option>
+  </select>
+
+  <button onclick="placeOrder()">Place Order</button>
+</div>
+
+<script type="module" src="order.js"></script>
+</body>
+</html>
