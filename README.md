@@ -48,6 +48,6 @@ A screen-recorded demo video is included in the submission.
 ## Team
 Team Name: COSMIQ
 Members:
-Nethrasree T
-Nishita Shenoy
-Umme Kulsum D
+Nethrasree T,
+Nishita Shenoy,
+Umme Kulsum D.
